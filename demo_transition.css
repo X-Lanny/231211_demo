@@ -1,0 +1,30 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    margin: auto; 
+    /* 定义方形的位置 */
+    /* transition: all 1s ease-in; */
+}
+.box:hover{
+    -webkit-animation: hover 1s ease-in infinite;
+    /* <!-- webkit前缀，未来谷歌浏览器能兼容 --> */
+    /* <!-- 名称 完成时间 动画效果 播放次数 --> */
+    /* 他们四个数值中间用‘空格’隔开 */
+    background-color: brown;
+    /* width: 100px;
+    height: 200px;
+    border-radius: 50%;
+    transition: all 2s ease-in 1s; */
+    /* 2th 动画完成时间 4th 动画开始时间 不写的参数用默认值 */
+}
+
+@-webkit-keyframes hover{
+    0%{width:100px;height:100px;border-radius: 50%;}
+    50%{width:200px;height:200px;border-radius: 50%;}
+    100%{width:100px;height:100px;border-radius: 50%;}
+}
+
+/* transform:translateX(20px) 只改x方向，写y的是只改变y方向
+transform:translateY(20px) */
+

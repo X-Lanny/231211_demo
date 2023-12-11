@@ -1,0 +1,35 @@
+<a href="#"></a>
+<!-- #的链接是当前页面，一般格式加‘#’ -->
+
+.transform{
+    float
+
+}
+<!-- The float property is used for positioning and formatting content 
+e.g. let an image float left to the text in a container.
+
+The float property can have one of the following values:
+left - The element floats to the left of its container
+right - The element floats to the right of its container
+none - The element does not float (will be displayed just where it occurs in the text). This is default
+inherit - The element inherits the float value of its parent -->
+
+<!-- https://www.w3schools.com/css/css_float.asp -->
+<!-- 案例中展示了图片和文字的排列方式 -->
+
+
+.transform::after{
+    content="";
+    clear: both;
+    display: block;
+    overflow: hidden;
+}
+<!-- 在 CSS 中，clear 属性用于指定一个元素的两侧不能出现浮动元素。这主要涉及到浮动（float）布局时的清除效果。
+
+元素的 clear 属性有以下几个取值：
+
+none: 默认值，允许两侧出现浮动元素。
+left: 元素的左侧不允许出现浮动元素。
+right: 元素的右侧不允许出现浮动元素。
+both: 元素两侧都不允许出现浮动元素。
+通常，clear 属性用于解决浮动元素导致的布局问题，确保一个元素的两侧不会被浮动元素所覆盖。这在处理浮动元素的容器高度塌陷等问题时非常有用。 -->
